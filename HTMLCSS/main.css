@@ -22,6 +22,56 @@
   text-align: center;
 }
 
+.shop-bg {
+  background-color: #eee;
+  pd: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+/*
+  one-way 애니메이션 혼자 만드는 법
+  1. 시작스타일 정하기
+  2. 최종스타일 정하기
+  3. 언제 최종스타일로 변할지 트리거 주기
+  4. transition으로 서서히 동작하게 만들기
+*/
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overflow {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 50%;
+  margin-top: 90px;
+  overfl
+}
 
 /* 미디어쿼리는 페이지 맨 밑에! */
 @media screen and (max-width: 1200px) {
@@ -29,7 +79,7 @@
     float: left;
     width: 50%;
   }
-  
+
   .product-container {
     max-width: 600px;
   }
