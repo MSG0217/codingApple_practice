@@ -1,0 +1,43 @@
+.product-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-container i {
+  border-radius: 50%;
+  background-color: burlywood;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.product-container > div {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+
+/* 미디어쿼리는 페이지 맨 밑에! */
+@media screen and (max-width: 1200px) {
+  .product-container>div {
+    float: left;
+    width: 50%;
+  }
+  
+  .product-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-container>div {
+    float: none;
+    width: 100%;
+  }
+}
